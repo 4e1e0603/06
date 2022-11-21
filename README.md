@@ -2,11 +2,13 @@
 
 Web technologies introduction: HTML, CSS, JS
 
-## HTML
+## TL;DR
 
-HTML definuje struktuturu obsah stránky.
-CSS definuje vzhled stránky
-JS přidává funkcionlaitu navíc
+- HTML definuje strukturu stránky.
+- CSS definuje vzhled prvků stránky.
+- JavaScript přidává funkcionalitu navíc.
+
+## HTML
 
 - Document outline
   - `<doctype>`
@@ -14,7 +16,7 @@ JS přidává funkcionlaitu navíc
   - `<head>`
   - `<body>`
 - Comments
-  - `<!-- comment -->`  VSCOde comment/uncoment
+  - `<!-- comment -->`  (VS Code umí *comment/uncoment*.)
 - Page information
   - `<base />`
   - `<meta />`
@@ -39,10 +41,20 @@ JS přidává funkcionlaitu navíc
   - Image
   - Video
   - Audio
- 
+
  ## CSS
  
- ## JavaScript
+ ## JavaScript: DOM, JSON, HTTP
+ 
+ ### DOM
+ 
+ ### JSON
+ 
+ ### HTTP
+ 
+ ### JS: Objects
+ ### JS: Functions
+ ### JS: Prototypes
  
  ## Resources
  
