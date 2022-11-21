@@ -35,7 +35,7 @@ HTML elements; HTML attributes
   - `<header>` Header
   - `<footer>` Footer
   - `<main>` Main
-  - 
+  - `<article>` Article
   - `<section>`
 - Links
   - Page link
@@ -52,10 +52,11 @@ HTML elements; HTML attributes
   - `<dl>` Definition list
 - Tables: `<table>`
 - Forms and Inputs: `<form>`, `<input>`, `<textarea>`
-- Media
+- Media and embeding
   - Image: `<img>`
   - Video: `<video>
   - Audio: `<audio>`
+  - Frame: `<iframe>`
 - Canvas: `<canvas>`
   - 2D context
   - WebGL context
