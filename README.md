@@ -10,8 +10,10 @@ Web technologies introduction: HTML, CSS, JS
 
 ## HTML
 
+HTML elements; HTML attributes
+
 - Document outline
-  - `<doctype>`
+  - `<!DOCTYPE>`
   - `<html>`
   - `<head>`
   - `<body>`
@@ -28,11 +30,13 @@ Web technologies introduction: HTML, CSS, JS
   - `<p>` Paragraph
   - `<br />` Line break
   - `<hr />` Horizontal rule (line)
-  - `<aside>`
-  - `<nav>`
-  - `<header>`
-  - `<footer>`
-  - `<main>`
+  - `<aside>` Sidebar
+  - `<nav>` Navigation
+  - `<header>` Header
+  - `<footer>` Footer
+  - `<main>` Main
+  - 
+  - `<section>`
 - Links
   - Page link
   - Email link
@@ -47,7 +51,7 @@ Web technologies introduction: HTML, CSS, JS
   - `<ol>` Ordered list
   - `<dl>` Definition list
 - Tables: `<table>`
-- Forms: `<form>`
+- Forms and Inputs: `<form>`, `<input>`, `<textarea>`
 - Media
   - Image: `<img>`
   - Video: `<video>
@@ -58,7 +62,12 @@ Web technologies introduction: HTML, CSS, JS
 
  ## CSS
  
- ## JavaScript: DOM, JSON, HTTP
+ - `<link>`
+ - `@import`
+ - `#` id
+ - `.` class
+ 
+ ## JavaScript: DOM, JSON, HTTP, CORS
  
  ### DOM
  
@@ -72,4 +81,6 @@ Web technologies introduction: HTML, CSS, JS
  
  ## Resources
  
+- Mozilla HTML https://developer.mozilla.org/en-US/docs/Web/HTML
+- Mozilla CSS
 - https://www.quora.com/What-are-some-tips-for-a-person-learning-HTML?no_redirect=1
