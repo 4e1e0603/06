@@ -28,19 +28,33 @@ Web technologies introduction: HTML, CSS, JS
   - `<p>` Paragraph
   - `<br />` Line break
   - `<hr />` Horizontal rule (line)
+  - `<aside>`
+  - `<nav>`
+  - `<header>`
+  - `<footer>`
+  - `<main>`
 - Links
   - Page link
   - Email link
   - `<a name="anchor"`> Anchor
   - `<a href="#anchor"> Link to anchor (works for any element id)
 - Text markups
+  - `<i>`
+  - `<b>`
+  - &hellip;
 - Lists
-- Tables
-- Forms
+  - `<ul>` Unordered list
+  - `<ol>` Ordered list
+  - `<dl>` Definition list
+- Tables: `<table>`
+- Forms: `<form>`
 - Media
-  - Image
-  - Video
-  - Audio
+  - Image: `<img>`
+  - Video: `<video>
+  - Audio: `<audio>`
+- Canvas: `<canvas>`
+  - 2D context
+  - WebGL context
 
  ## CSS
  
