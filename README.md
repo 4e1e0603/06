@@ -1,57 +1,16 @@
 # course-webtech
 
-Web technologies introduction: HTML, CSS, JS
+Úvod do webových technologií: HTML, CSS, JavaScript, HTTP, JSON
 
 ## TL;DR
 
 - HTML definuje strukturu stránky.
 - CSS definuje vzhled prvků stránky.
 - JavaScript přidává funkcionalitu navíc.
+- HTTP je protokol pomocí kterého kominikujeme mezi klientem a serverem.
+- JSON je formát/zápis pro ukládání dat.
 
 ## HTML 5
-
-HTML elements; HTML attributes
-
-HTML je case insensitive
-doctype je to samé jako DOCTYPE  jako Doctype
-
-sekce Head slouží pro metadata (není zobrazena)
-sekce Body slouží pro zobrazené obsahu
-
-`<h1>` je hlavní nadpi stsránky a měl by být uveden pouze jednou (sémantika).
-
-CTRL + Shif + I zapíná v Chrome vývojářské nástroje.
-CTRL + + zvětšuje font
-CTR + - zmenšuje font
-CTRL + 0 resetuje na 100%
-
-## Element, atribut tag
-
-HTML Element je reprezentován HTML tagem
-HTML tag může být párový nebo nepárový
-
-
-Rozeznáváme dva druhy prvků
-1. blokový
-2. řádkový
-
-Tag může mít atribut Elemnt může vlastnost.
-
-
-```
-<!-- párový -->
-<h1> ... </h1>
-
-<!-- nepárový -->
-<img />
-```
-
-## Úprava textu
-
-`<b>` vs `<strong>`
-
-`<i>` vs `<em>`
-
 
 - Document outline
   - `<!DOCTYPE>`
@@ -104,6 +63,50 @@ Tag může mít atribut Elemnt může vlastnost.
   - WebGL context
 
  *italica*, **bold**
+
+HTML elements; HTML attributes
+
+- Syntax a sémantika HTML elementů.
+- HTML uvedem pomocí `<!DOCTYPE html>`.
+- HTML je  *case insensitive* tzn., že `doctype` je to samé jako `DOCTYPE` nebo `Doctype`, nicméně je dobré zapisovat jako `DOCTYPE`.
+- HTML sekce `<head>` slouží pro metada a není určena k zobrazení.
+- HTML sekce `<body>` slouží pro zobrazení obsahu
+
+`<h1>` je hlavní nadpis stránky a měl by být uveden pouze jednou.
+
+- CTRL + Shif + I zapíná v Chrome vývojářské nástroje.
+- CTRL + + zvětšuje font
+- CTRL + - zmenšuje font
+- CTRL + 0 resetuje na 100%
+
+## Element, atribut tag
+
+HTML element je reprezentován HTML tagem.
+HTML tag může být párový nebo nepárový.
+
+Element
+1. blokový (většina)
+2. řádkový
+
+Řadkový se dá zobrazit jako blokový a naopak, pomocí CSS.
+
+Tag může mít atribut Elemnt může vlastnost.
+
+
+```
+<!-- párový -->
+<h1> ... </h1>
+
+<!-- nepárový -->
+<img />
+```
+
+## Úprava textu
+
+`<b>` vs `<strong>`
+
+`<i>` vs `<em>`
+
 
  ## CSS
 

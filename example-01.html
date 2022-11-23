@@ -4,13 +4,12 @@
     <meta charset="UTF-8"/>
     <title>Title</title>
     <script>
-
       window.onload = function() {
-      const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
-
-ctx.fillStyle = "green";
-ctx.fillRect(10, 10, 150, 100);}()
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "green";
+        ctx.fillRect(10, 10, 150, 100);
+      }()
     </script>
   </head>
 <body>
@@ -21,7 +20,9 @@ ctx.fillRect(10, 10, 150, 100);}()
 
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quas cupiditate, fugiat soluta alias magni exercitationem repellendus sed, ex nesciunt illum. Dolore nobis hic iusto cupiditate quaerat, officia impedit sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, mollitia dolores, veritatis animi alias ipsum libero delectus tenetur necessitatibus quas in quod cupiditate non quae provident eum voluptatum rem? Soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis optio voluptatum, porro repellendus cum, qui, sit praesentium soluta culpa voluptates explicabo. Ullam commodi nemo dolor aliquid nulla ipsum veniam dolorem!</p>
 
-  <h2>Title 1.2</h2>
+  <!-- -------------------------------------------------------------------- -->
+  <h2>Titles</h2>
+  <!-- -------------------------------------------------------------------- -->
 
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quas cupiditate, fugiat soluta alias magni exercitationem repellendus sed, ex nesciunt illum. Dolore nobis hic iusto cupiditate quaerat, officia impedit sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, mollitia dolores, veritatis animi alias ipsum libero delectus tenetur necessitatibus quas in quod cupiditate non quae provident eum voluptatum rem? Soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis optio voluptatum, porro repellendus cum, qui, sit praesentium soluta culpa voluptates explicabo. Ullam commodi nemo dolor aliquid nulla ipsum veniam dolorem!</p>
 
@@ -43,29 +44,29 @@ ctx.fillRect(10, 10, 150, 100);}()
 
   <hr /> <!-- horizontal rule -->
 
+  <!-- -------------------------------------------------------------------- -->
   <h2>Úprava textu</h2>
+  <!-- -------------------------------------------------------------------- -->
 
   <p>Lorem <i>ipsum</i> <b>dolor</b> <em>sit</em> <strong>amet</strong> consectetur adipisicing elit. Harum sunt accusantium omnis! Non alias delectus voluptatum labore exercitationem cupiditate blanditiis aspernatur. Vitae ducimus ratione maiores accusantium. Illo non possimus atque?</p>
 
-
+  <!-- -------------------------------------------------------------------- -->
   <h2>Seznam</h2>
+  <!-- -------------------------------------------------------------------- -->
 
-  <h3>Unordered</h3>
+  <h3>Unordered List</h3>
 
   <ul>
-    <li>item</li>
     <li>item</li>
     <li>item</li>
     <ul>
       <li>item</li>
       <li>item</li>
-      <li>
-        <ul>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-        </ul>
-      </li>
+      <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+      </ul>
     </ul>
   </ul>
 
@@ -74,12 +75,14 @@ ctx.fillRect(10, 10, 150, 100);}()
   <ol type="1">
     <li>item</li>
     <li>item</li>
-    <li>item</li>
     <ol>
       <li>item</li>
       <li>item</li>
-      <li>item</li>
-      <li>item</li>
+      <ol>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+      </ol>
     </ol>
   </ol>
 
@@ -122,7 +125,9 @@ ctx.fillRect(10, 10, 150, 100);}()
   <dd>definition 2</dd>
 </dl>
 
+<!-- -------------------------------------------------------------------- -->
 <h2 id="anchor">Odkazy</h2>
+<!-- -------------------------------------------------------------------- -->
 
 <h3>
   Odkaz ven
@@ -149,13 +154,14 @@ Jednoduchá navigace mezi stránkami.
 
 <a href="mailto:m.bluth@example.com">Email</a>
 
+<!-- -------------------------------------------------------------------- -->
 <h2>Média</h2>
+<!-- -------------------------------------------------------------------- -->
 
 <a href="./image1.png">
   <img src="image1.png" height="200"/>
 </a>
 
 <!-- <iframe height="300" src="https://www.youtube.com/embed/mPDLJ1UU2Uk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-
 
 <canvas id="canvas" width="300"></canvas>
