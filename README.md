@@ -1,6 +1,6 @@
 # course-webtech
 
-Úvod do webových technologií: HTML, CSS, JavaScript, HTTP, JSON
+Úvod do webových technologií: HTTP, HTML, CSS, JavaScript a JSON.
 
 ## TL;DR
 
@@ -10,59 +10,59 @@
 - HTTP je protokol pomocí kterého kominikujeme mezi klientem a serverem.
 - JSON je formát/zápis pro ukládání dat.
 
+- HTML
+  - Struktura stránku (Document outline)
+    - `<!DOCTYPE>`
+    - `<html>`&hellip;`</html>`
+    - `<head>`&hellip;`</head>` (Page information)
+      - `<base />`
+      - [x] `<meta />` meta informace
+      - [x] `<meta charset="UTF-8 />` kódování stránky
+      - [x] `<title />` titulek stránky
+    - `<body>`&hellip;`</body>`
+  - Komentáře `<!-- oneline or multiline comment -->`
+  - Struktura a obsah (page content and structure)
+  - Obsah (Page content
+    - [x] `<h1>`... `<h6>` Heading
+    - `<span>` Inline section
+    - [x] `<p>` Paragraph
+    - [x] `<br />` Zalomení (Line break): používej jen málo
+    - [ ] `&nbsp;` Nezalomitelná mezera
+    - [x] `<hr />` Horizontal rule (line)
+  - [x] Links
+    - Page link
+    - Email link: `<a href="mailto:m.bluth@example.com">Email</a>`
+    - `<a name="anchor"`> Anchor
+    - `<a href="#anchor">` Link to anchor (works for any element id)
+  - Text markups
+    - `<i>`
+    - `<b>`
+    - &hellip;
+  - Lists
+    - [x] `<ul>` Unordered list
+    - [x] `<ol>` Ordered list
+    - [x] `<dl>` Definition list
+  - Tables: `<table>`
+  - Forms and Inputs: `<form>`, `<input>`, `<textarea>`
+  - Media and embeding
+    - Image: `<img>`
+    - Video: `<video>
+    - Audio: `<audio>`
+    - Frame: `<iframe>`
+  - Canvas: `<canvas>`
+    - 2D context
+    - WebGL context
+  - Členění stránky
+    - [x] `<div>` Page division (division)
+    - `<aside>` Sidebar
+    - `<nav>` Navigation
+    - `<header>` Header
+    - `<footer>` Footer
+    - `<main>` Main
+    - `<article>` Article
+    - `<section>`
+
 ## HTML 5
-
-- Document outline
-  - `<!DOCTYPE>`
-  - `<html>`
-  - `<head>`
-  - `<body>`
-- Comments
-  - `<!-- comment -->`  (VS Code umí *comment/uncoment*.)
-- Page information
-  - `<base />`
-  - [x] `<meta />`
-    - [x] `<meta charset="UTF-8 />` Důležitý
-  - [x] `<title />`
-- Page structure
-  - [x] `<h1>`... `<h6>` Heading
-  - [x] `<div>` Page section (division)
-  - `<span>` Inline section
-  - [x] `<p>` Paragraph
-  - [x] `<br />` Line break: používej jen málo
-  - [x] `<hr />` Horizontal rule (line)
-  - `<aside>` Sidebar
-  - `<nav>` Navigation
-  - `<header>` Header
-  - `<footer>` Footer
-  - `<main>` Main
-  - `<article>` Article
-  - `<section>`
-- [x] Links
-  - Page link
-  - Email link: `<a href="mailto:m.bluth@example.com">Email</a>`
-  - `<a name="anchor"`> Anchor
-  - `<a href="#anchor">` Link to anchor (works for any element id)
-- Text markups
-  - `<i>`
-  - `<b>`
-  - &hellip;
-- Lists
-  - [x] `<ul>` Unordered list
-  - [x] `<ol>` Ordered list
-  - [x] `<dl>` Definition list
-- Tables: `<table>`
-- Forms and Inputs: `<form>`, `<input>`, `<textarea>`
-- Media and embeding
-  - Image: `<img>`
-  - Video: `<video>
-  - Audio: `<audio>`
-  - Frame: `<iframe>`
-- Canvas: `<canvas>`
-  - 2D context
-  - WebGL context
-
- *italica*, **bold**
 
 HTML elements; HTML attributes
 
@@ -92,7 +92,6 @@ Element
 
 Tag může mít atribut Elemnt může vlastnost.
 
-
 ```
 <!-- párový -->
 <h1> ... </h1>
@@ -101,12 +100,11 @@ Tag může mít atribut Elemnt může vlastnost.
 <img />
 ```
 
-## Úprava textu
+## Úprava textu a typografie
 
 `<b>` vs `<strong>`
 
 `<i>` vs `<em>`
-
 
  ## CSS
 
