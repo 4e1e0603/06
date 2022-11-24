@@ -1,6 +1,12 @@
 # course-webtech
 
-Úvod do webových technologií: HTTP, HTML, CSS, JavaScript a JSON.
+Úvod do webových technologií.
+
+1. HTTP Hypertext Transfer Protocol
+2. HTML Hypertext Markup Language
+3. CSS  Cascading Style Sheets
+4. JS   JavaScript programming language
+5. JSON JavaScript Object Notation
 
 ## TL;DR
 
@@ -131,3 +137,5 @@ Tag může mít atribut Elemnt může vlastnost.
 - Mozilla CSS https://developer.mozilla.org/en-US/docs/Web/CSS
 - https://www.jakpsatweb.cz/
 - https://www.quora.com/What-are-some-tips-for-a-person-learning-HTML?no_redirect=1
+- https://en.wikipedia.org/wiki/CSS
+- https://www.json.org/json-en.html
