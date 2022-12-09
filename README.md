@@ -132,6 +132,9 @@ Tag může mít atribut Elemnt může vlastnost.
  ### JS: Prototypes
 
  ## Resources
+ 
+- [Chrome Development Tools](https://developer.chrome.com/docs/devtools/) 
+- [Firefox Development Tools](https://firefox-source-docs.mozilla.org/devtools-user/)
 
 - Mozilla HTML https://developer.mozilla.org/en-US/docs/Web/HTML
 - Mozilla CSS https://developer.mozilla.org/en-US/docs/Web/CSS
