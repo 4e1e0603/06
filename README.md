@@ -7,7 +7,7 @@
 <details>
 <summary>TL;DR</summary>
 - HTML definuje strukturu stránky.
-- CSS definuje vzhled prvků stránky.
+- CSS definuje zobrazení stránky.
 - JavaScript přidává funkcionalitu navíc.
 - HTTP je protokol pomocí kterého kominikujeme mezi klientem a serverem.
 - JSON je formát/zápis pro ukládání dat.
