@@ -2,22 +2,21 @@
 
 Úvod do webových technologií.
 
-1. HTTP Hypertext Transfer Protocol
-2. HTML Hypertext Markup Language
-3. CSS  Cascading Style Sheets
-4. JS   JavaScript programming language
-5. JSON JavaScript Object Notation
+## Obsah
 
-## TL;DR
-
+<details>
+<summary>TL;DR</summary>
 - HTML definuje strukturu stránky.
 - CSS definuje vzhled prvků stránky.
 - JavaScript přidává funkcionalitu navíc.
 - HTTP je protokol pomocí kterého kominikujeme mezi klientem a serverem.
 - JSON je formát/zápis pro ukládání dat.
+</details>
+
+<details><summary>HTML (Hypertext Markup Language)</summary>
 
 - HTML
-  - Struktura stránku (Document outline)
+  - Struktura stránky (Document outline)
     - `<!DOCTYPE>`
     - `<html>`&hellip;`</html>`
     - `<head>`&hellip;`</head>` (Page information)
@@ -68,8 +67,6 @@
     - `<article>` Article
     - `<section>`
 
-## HTML 5
-
 HTML elements; HTML attributes
 
 - Syntax a sémantika HTML elementů.
@@ -80,19 +77,17 @@ HTML elements; HTML attributes
 
 `<h1>` je hlavní nadpis stránky a měl by být uveden pouze jednou.
 
-- CTRL + Shif + I zapíná v Chrome vývojářské nástroje.
+- CTRL + Shift + I zapíná v Chrome vývojářské nástroje.
 - CTRL + + zvětšuje font
 - CTRL + - zmenšuje font
 - CTRL + 0 resetuje na 100%
 
-## Element, atribut tag
-
-HTML element je reprezentován HTML tagem.
-HTML tag může být párový nebo nepárový.
-
-Element
-1. blokový (většina)
-2. řádkový
+- Element, atribut tag
+ - HTML element je reprezentován HTML tagem.
+ - HTML tag může být párový nebo nepárový.
+- Element
+ 1. blokový (většina)
+ 2. řádkový
 
 Řadkový se dá zobrazit jako blokový a naopak, pomocí CSS.
 
@@ -106,30 +101,33 @@ Tag může mít atribut Elemnt může vlastnost.
 <img />
 ```
 
-## Úprava textu a typografie
+- Úprava textu a typografie
 
 `<b>` vs `<strong>`
 
 `<i>` vs `<em>`
+</details>
 
- ## CSS
+<details><summary>CSS (Cascading Style Sheets)</summary>
 
  - `<link>`
  - `@import`
  - `#` id
  - `.` class
+ 
+</details>
 
- ## JavaScript: DOM, JSON, HTTP, CORS
+<details><summary>JavaScript: DOM, JSON, HTTP, CORS </summary>
 
- ### DOM
+- DOM
+- JS: Objects
+- JS: Functions
+- JS: Prototypes
+- JSON
+</details>
 
- ### JSON
-
- ### HTTP
-
- ### JS: Objects
- ### JS: Functions
- ### JS: Prototypes
+<details><summary>HTTP (Hypertext Transfer Protocol)</summary>
+</details>
 
  ## Resources
  
