@@ -1,4 +1,4 @@
-# course-webtech
+# course-webdev
 
 Úvod do webových technologií.
 
