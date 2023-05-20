@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #canvas2 {
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(51.4285714286deg);
+        }
+        #canvas3 {
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(102.857142857);
+        }
+    </style>
+</head>
+
+
+<script>
+window.onload = () => {
+   
+function create(object, index, size) {
+    const radius = (size / 2) - 5
+
+    let canvas = document.createElement("canvas");
+    
+    canvas.id =`canvas${index}`
+    
+    canvas.width = size * dpi;
+    canvas.height = size * dpi;
+    
+    canvas.style.width = `${size}px`;
+    canvas.style.height = `${size}px`;
+    
+    var ctx = canvas.getContext("2d"); 
+    ctx.scale(dpi, dpi);
+    ctx.translate(size * 0.5, size * 0.5);
+
+    ctx.fillStyle = "rgba(10, 10, 10, 0)";
+    ctx.lineWidth = "1"
+    ctx.fillRect(-250, -250, size, size);
+
+
+    ctx.beginPath();
+    ctx.arc((0), (0), radius, 0, 2 * Math.PI);
+    ctx.lineWidth="1"
+    ctx.strokeStyle = "#aaa";
+    ctx.stroke()
+    
+    const angle = 2 * Math.PI / (object.n); 
+    
+    let angles = []
+    
+    for (i = 0; i <= 7; ++i) {
+        angles.push(i * angle)
+    }
+    
+    let points = []
+    angles.forEach((angle) => {
+        points.push({
+            x: (radius * Math.cos(angle)), 
+            y: (radius * Math.sin(angle))
+        })
+    })
+    
+    ctx.beginPath(); 
+    ctx.strokeStyle = "#000";
+    ctx.fillStyle = object.c;
+
+    points.forEach((point) => {
+        ctx.lineTo(point.x, point.y)
+    })
+    // ctx.closePath();
+
+    ctx.fill();
+    ctx.stroke()
+
+    document.querySelector("#wrapper").appendChild(canvas)
+    
+}
+
+function cloneCanvas(oldCanvas) {
+
+    var newCanvas = document.createElement('canvas');
+    var context = newCanvas.getContext('2d');
+
+    newCanvas.width = oldCanvas.width;
+    newCanvas.height = oldCanvas.height;
+
+    context.drawImage(oldCanvas, 0, 0);
+
+    return newCanvas;
+}
+
+/************************************************************************/
+
+const dpi = window.devicePixelRatio
+const size = 500
+    
+objects = [
+    {n: 2, c: `rgba(170,175,255,0.5)`},
+    {n: 3, c: `rgba(170,175,255,0.5)`},
+    {n: 4, c: `rgba(170,175,255,0.5)`},
+    {n: 5, c: `rgba(170,175,255,0.5)`},
+    {n: 6, c: `rgba(170,175,255,0.5)`},
+    {n: 7, c: `rgba(170,175,255,0.5)`},
+]
+
+objects.forEach((object, index)=> {
+    create(object, index, size)
+})
+
+
+// Clone all canvases.
+// var wrapper = document.getElementById("wrapper")
+
+// wrapper.appendChild(document.createElement("hr"))
+
+// var canvases = document.getElementsByTagName("canvas")
+
+// console.log(canvases)
+ 
+
+// Array.from(canvases).forEach((canvas) =>{
+//     wrapper.appendChild(cloneCanvas(canvas));
+
+// })
+
+
+}
+
+</script>
+
+<body>
+    <div id="wrapper" style="width:1600px; margin: auto;">
+        <h1>Visualization</h1>
+</div>
+</body>
+</html>

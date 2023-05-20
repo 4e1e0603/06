@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+html {
+	 font-family: sans-serif;
+}
+ .app {
+	 display: grid;
+	 grid-template-columns: 23vw 50vw 25vw;
+	 grid-column-gap: 20px;
+}
+ .container {
+	 margin-top: 20px;
+}
+ .tab-nav {
+	 padding: 7px 15px;
+	 border-left: 1px solid transparent;
+	 border-top: 1px solid transparent;
+	 border-right: 1px solid transparent;
+	 background-color: rgb(216, 214, 214);
+	 color: rgb(156, 156, 156);
+	 cursor: pointer;
+}
+ .tab-nav:hover {
+	 border: 1px solid rgb(0, 0, 0);
+	 border-bottom: none;
+     color: black
+}
+ .tab-nav:focus {
+	 outline-color: rgb(255, 0, 0) dd;
+	 outline-style: solid;
+	 outline-width: thick;
+}
+ .tab-nav:target {
+	 background-color: rgb(171, 12, 12);
+	 color: white;
+}
+ .tab-nav-wrap {
+	 display: flex;
+	 flex-direction: row;
+	 align-items: center;
+}
+ .tab-nav-wrap > * + * {
+	 margin-left: 0.2rem;
+}
+ .tab-content {
+	 display: none;
+	 visibility: hidden;
+	 opacity: 0;
+}
+ .tab-content:target {
+	 display: block;
+	 visibility: visible;
+	 opacity: 1;
+	 animation-name: show;
+	 animation-duration: 0.3s;
+}
+ @media (prefers-reduced-motion: reduce) {
+	 .tab-content:target {
+		 animation: unset;
+	}
+}
+ .tab-content-wrap {
+     box-sizing: border-box;
+	 width: 100%;
+	 padding: 20px 40px;
+	 border: 2px solid black;
+}
+ @keyframes show {
+	 from {
+		 visibility: visible;
+		 opacity: 0;
+	}
+	 to {
+		 opacity: 1;
+	}
+}
+ 
+     </style>
+</head>
+<body>
+
+    <div class="app">
+
+	<div></div>
+	
+	<section class="container">
+
+	  <nav class="tab-nav-wrap">
+		  <a href="#tab1" 
+			 class="tab-nav">Tab 1</a>
+		  <a href="#tab2" 
+			 class="tab-nav">Tab 2</a>
+		  <a href="#tab3" 
+			 class="tab-nav">Tab 3</a>
+	  </nav>
+
+	  <section class="tab-content-wrap">
+		<article id="tab1" 
+				 class="tab-content">
+		  Tab 1 content
+		</article>
+		<article id="tab2" 
+				 class="tab-content">
+		  Tab 2 content
+		</article>
+		<article id="tab3" 
+				 class="tab-content">
+		  Tab 3 content
+		</article>
+	  </section>
+
+	</section>
+	
+	<div></div>
+	
+</div>
+    
+</body>
+</html>

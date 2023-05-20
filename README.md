@@ -140,3 +140,13 @@ Tag může mít atribut Elemnt může vlastnost.
 - https://www.quora.com/What-are-some-tips-for-a-person-learning-HTML?no_redirect=1
 - https://en.wikipedia.org/wiki/CSS
 - https://www.json.org/json-en.html
+- https://developer.chrome.com/articles/css-nesting/
+
+- https://kyoshee.medium.com/building-tabs-component-using-only-html-and-css-no-js-74db7790fad2
+  - https://codepen.io/kyoshee/pen/NWyvjjN
+
+## Notes
+
+```shell
+git subtree push --prefix=dist origin gh-pages
+```

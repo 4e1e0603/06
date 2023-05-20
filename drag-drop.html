@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Today!</title>
+        <style>
+        main {
+          width: 100%;
+          min-height: 100vh;
+          display: grid;
+        }
+
+        #box1, #box2, #box {
+          background: rgba(255, 255, 255, 0.8);
+          place-self: center;
+          font-size: 5rem;
+          padding: 1rem;
+          color: rgb(51, 51, 51);
+          border: 1px solid #ddd;
+          min-width: 50px;
+          min-height: 50px;
+          border: 1px solid #ddd;
+        }
+        #box { background-color: transparent; border: none}
+
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background: rgb(20, 35, 122);
+            background: linear-gradient(25deg,
+                    rgba(255, 255, 255, 0.6) 0%,
+                    rgba(225, 225, 225, 0.6) 25%,
+                    rgba(207, 206, 206, 0.6) 70%,
+                    rgba(121, 121, 121, 0.6) 100%);
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #time {
+            color: rgb(146, 39, 234);
+        }
+        #date {
+            color: rgb(44, 44, 44)
+        }
+    </style>
+    </head>
+    <body>
+        <main>
+            <div id="box1" draggable="true" ondrag="drag(event)">
+                drag
+            </div>
+            <div id="box">
+                &
+            </div>
+            <div id="box2" ondrop="drop(event)" ondragover="over(event)" ondragleave="leave(event)" ondrop="drop(event)">
+                drop
+            </div>
+        </main>
+    </body>
+
+    <script type="text/javascript" defer>
+            
+        function drag(event) {
+            event.dataTransfer.setData("text/plain", "data-1");
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            // event.target.style.border = "2px solid orange"
+            let data = event.dataTransfer.getData("text/plain");
+            console.log(event.target.id, "drop", data)
+        }
+
+        function over(event) {
+            event.preventDefault()
+            event.target.style.border = "2px solid red"
+            console.log(event.target.id, "over")
+        }
+
+        function leave(event) {
+            event.target.style.border = "2px solid black"
+            console.log(event.target.id, "leave")
+        }
+
+    </script>
+</html>
