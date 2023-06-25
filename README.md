@@ -1,4 +1,4 @@
-# course-webdev
+# c23
 
 Úvod do webových technologií.
 
