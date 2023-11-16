@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body,
+        html {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+
+        main {
+            /* display: grid; */
+            /* place-items: center; */
+            height: 100vh;
+            margin: 0 auto;
+            width: 800px;
+            /* border: 1px solid black;  */
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main div {
+            /* width: 90%; */
+            /* height: 30%; */
+            border: 1px solid #ddd;
+            padding: 1rem;
+        }
+    </style>
+    <script type="text/javascript" defer>
+        window.onload = () => {
+            document.addEventListener("keydown", (event) => {
+                let search = document.querySelector("#search")
+                // Focus on search form.
+                if (event.ctrlKey && event.key === 'k') {
+                    event.preventDefault();
+                    search.focus();
+                    search.value = ''
+                    // Escape from search form.
+                } else if (event.key === "Escape" && document.activeElement == search) {
+                    event.preventDefault()
+                    search.blur()
+                    // Clear search input.
+                } else if (event.key === "Delete" && document.activeElement == search) {
+                    event.preventDefault();
+                    search.value = ''
+                    // Submit search form.        
+                } else if (event.key === "Enter" && document.activeElement == search) {
+                    let searchForm = document.querySelector("#search")
+                    // searchForm.submit()
+                    // searchForm.method = "post" 
+                    // let result = await (async () => findPerson(search.value))()
+                    // console.log(result)
+                }
+            })
+
+            let searchForm = document.querySelector("#search-form")
+            searchForm.addEventListener("submit", async (event) => {
+                event.preventDefault();
+                const result = await findPerson(1)
+                console.log(result)
+            });
+        }
+
+        // USECASE
+        async function findPerson(id) {
+            const result = (await fetch(
+                `https://jsonplaceholder.typicode.com/todos/${id}`,
+                {
+                    mode: "cors",
+                    method: "GET",
+                    headers: {
+                        'Access-Control-Allow-Origin': '*',
+                        'Content-Type': 'application/json',
+                    }
+                })).json()
+            return result
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1>Search form key events</h1>
+            <p>
+                This example shows cusmoize search form behavior:
+            </p>
+            <ul>
+                <li>
+                    Focus on search input field when <kbd>Ctrl</kbd> + <kbd>k</kbd> key was pressed.
+                </li>
+                <li>
+                    Escape from search input field when <kbd>Escape</kbd> key was pressed.
+                </li>
+                <li>
+                    Delete search input field content when <kbd>Delete</kbd> key was pressed.
+                    <br>Works only when there is s focus on search input field.
+                </li>
+            </ul>
+            <div>
+                <form id="search-form" action="">
+                    <input type="text" id="search" placeholder="Press Ctrl + k for search"
+                        style="width: 80%; padding: 0; height: 2rem; font-size: 1.5rem;" />
+                    <input type="submit" style="height: 2rem; padding: 0; margin: 0; font-size: 1.5rem;" />
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
